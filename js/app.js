@@ -679,7 +679,14 @@ function showBestSellerPopup(){
     const img = document.getElementById("bestSellerImg");
     const title = document.getElementById("bestSellerTitle");
     const close = document.getElementById("closeBestSeller");
-    if(title && pick?.title) title.textContent = pick.title;
+    
+    // Extract product name from image path
+    const getProductName = (path) => {
+      const file = (path || "").split("/").pop() || "";
+      return file.replace(/\.(jpg|jpeg|png|webp)$/i,"").replace(/[_-]+/g," ").trim() || "Produkt i Preferuar";
+    };
+    
+    if(title) title.textContent = getProductName(pick.image);
     if(img && pick?.image) img.src = pick.image;
 
     close && close.addEventListener("click", ()=> dlg.close());
