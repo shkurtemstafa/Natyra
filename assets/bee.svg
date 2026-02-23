@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bee icon">
+<circle cx="70" cy="90" r="28" fill="#111"/>
+<ellipse cx="120" cy="110" rx="45" ry="32" fill="#f4b400"/>
+<path d="M85 110h70" stroke="#111" stroke-width="14" stroke-linecap="round"/>
+<path d="M95 90h62" stroke="#111" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+<path d="M110 70c-10-28 25-36 35-14" fill="none" stroke="#8ab4f8" stroke-width="10" stroke-linecap="round"/>
+<path d="M95 70c-22-22-48 8-26 26" fill="none" stroke="#8ab4f8" stroke-width="10" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,1 @@
+Place your popup images in this folder using the exact filenames referenced in data/best_seller_popups.js

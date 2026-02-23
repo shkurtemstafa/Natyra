@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Gift box">
+<rect x="40" y="85" width="120" height="85" rx="14" fill="#f4b400"/>
+<rect x="40" y="70" width="120" height="25" rx="10" fill="#111"/>
+<rect x="93" y="70" width="14" height="100" fill="#111"/>
+<path d="M92 70c-20-6-30-25-10-35 16-8 28 10 20 35Z" fill="#34a853"/>
+<path d="M108 70c20-6 30-25 10-35-16-8-28 10-20 35Z" fill="#34a853"/>
+</svg>

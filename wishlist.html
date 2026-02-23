@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wishlist • Kosovo Honey & Naturals</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <span class="badge">Distributor in Kosovo • No online payments • WhatsApp ordering</span>
+        <span class="badge">Customer support: <b style="color:var(--text)">WhatsApp</b></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <h1 id="brandName">Kosovo Honey & Naturals</h1>
+            <small id="brandTagline">Natural products distributor in Kosovo • 100+ items • Order via WhatsApp</small>
+          </div>
+        </a>
+
+        <div class="links">
+          <a class="link" href="products.html">Shop</a>
+          <a class="link" href="categories.html">Categories</a>
+          <a class="link" href="about.html">About</a>
+          <a class="link" href="contact.html">Contact</a>
+        </div>
+
+        <div class="actions">
+          <input id="globalSearch" class="input" placeholder="Search honey, propolis, tea..." />
+          <a class="btn" href="wishlist.html" aria-label="Wishlist">Wishlist <span id="wishCount" class="pill" style="padding:6px 10px">0</span></a>
+          <a class="btn" href="cart.html" aria-label="Cart">Cart <span id="cartCount" class="pill" style="padding:6px 10px">0</span></a>
+          <button id="whatsAppBtn" class="btn primary" type="button">WhatsApp</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 18px 0 40px">
+    <div id="wishlistMount"></div>
+  </main>
+
+  <script src="data/products.js"></script>
+  <script src="data/seed_reviews.js"></script>
+  <script src="data/best_seller_popups.js"></script>
+  <script src="js/app.js"></script>
+  
+  <footer class="site-footer" style="margin-top:26px">
+    <div class="container">
+      <div class="footer-grid">
+        <section>
+          <h3>Categories</h3>
+          <a class="footer-link" href="products.html?cat=Honey%20Products">Honey</a>
+          <a class="footer-link" href="products.html?cat=Natural%20Oils">Bee Products</a>
+          <a class="footer-link" href="products.html?cat=Prayer_Accesories">Gift Sets</a>
+        </section>
+        <section>
+          <h3>Help</h3>
+          <a class="footer-link" href="faqs.html">FAQs</a>
+          <a class="footer-link" href="shipping.html">Shipping</a>
+          <a class="footer-link" href="returns.html">Returns</a>
+          <a class="footer-link" href="quality.html">Quality Guarantee</a>
+        </section>
+        <section>
+          <h3>Get in touch</h3>
+          <p class="footer-text">🍯 100% Natural Honey from Kosovo</p>
+          <p class="footer-text">📱 WhatsApp: <a class="footer-link-inline" href="https://wa.me/38349123456" target="_blank" rel="noopener">+383 49 123 456</a></p>
+          <p class="footer-text">📧 <a class="footer-link-inline" href="mailto:info@naturalproducts.com">info@naturalproducts.com</a></p>
+          <p class="footer-text">📍 Prishtina, Kosovo</p>
+        </section>
+        <section>
+          <h3>Newsletter</h3>
+          <p class="footer-text">Subscribe for exclusive offers and health tips</p>
+          <form id="newsletterForm" class="footer-form">
+            <input id="newsletterEmail" class="input" type="email" placeholder="email@example.com" required>
+            <button class="btn primary" type="submit">Subscribe</button>
+          </form>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2025</span> Natural Products - Natural Honey and Products from Kosovo. All rights reserved.</span>
+        <a class="footer-link-inline" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+</main>
+<script src="data/products.js"></script>
+  <script src="data/seed_reviews.js"></script>
+  <script src="data/best_seller_popups.js"></script>
+  <script src="js/app.js"></script>
+
+  <button id="scrollTopBtn" class="scrolltop" type="button" aria-label="Scroll to top">↑</button>
+
+  <dialog id="bestSellerDialog" aria-label="Best seller">
+    <div class="modal-head">
+      <b>🔥 Best Seller</b>
+      <button class="btn" id="closeBestSeller" type="button">Close</button>
+    </div>
+    <div class="modal-body">
+      <div class="split">
+        <div class="card" style="margin:0">
+          <div class="thumb">
+            <img id="bestSellerImg" src="" alt="Best seller" style="width:min(360px, 85%); border-radius:16px" onerror="this.style.display='none'; document.getElementById('bestSellerImgFallback').style.display='block';">
+            <div id="bestSellerImgFallback" class="kpi" style="display:none; margin:14px">
+              <b>Popup image not found</b>
+              <span>Place images inside <code>assets/Pop_ups_images/</code> using the exact filenames.</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 id="bestSellerTitle" style="margin:0 0 6px">Best Seller</h3>
+            <div class="meta">
+              <span class="pill">Limited-time highlight</span>
+              <span class="pill">Popular choice</span>
+            </div>
+          </div>
+        </div>
+        <div class="kpi">
+          <b>Don’t miss out</b>
+          <span>Explore our most popular products and order instantly via WhatsApp.</span>
+          <div class="hr"></div>
+          <div class="row">
+            <a class="btn primary" href="products.html">Shop now</a>
+            <a class="btn" href="categories.html">Browse categories</a>
+          </div>
+          <small class="note">This popup appears once per session.</small>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+</body>
+</html>
+</body>
+</html>

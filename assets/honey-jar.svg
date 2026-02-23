@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Honey jar">
+<path d="M60 35h80l-8 18H68z" fill="#111"/>
+<rect x="65" y="50" width="70" height="20" rx="8" fill="#333"/>
+<rect x="55" y="70" width="90" height="105" rx="16" fill="#f4b400"/>
+<path d="M65 95h70v60a12 12 0 0 1-12 12H77a12 12 0 0 1-12-12z" fill="#f6c453"/>
+<circle cx="100" cy="125" r="20" fill="#fff" opacity="0.25"/>
+</svg>
